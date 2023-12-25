@@ -19,7 +19,8 @@ Este projeto consiste em um pipeline de dados que coleta informações de uma AP
 
     Alerta Sobre o API: O pipeline possui um alerta sobre o status da requisição ao API.
 
-    Transformação de Dados: Os dados obtidos da API podem ser transformados conforme as necessidades específicas do projeto. Isso inclui limpeza de dados, conversão de formatos, e qualquer outra manipulação necessária.
+    Transformação de Dados: Os dados obtidos da API foram transformados conforme as necessidades específicas do projeto. 
+    Isso inclui limpeza de dados, conversão de formatos, e qualquer outra manipulação necessária.
 
     Três DataFrames: Um sobre as informações dos pacientes, outro sobre as informações das vacinas e outro sobre as informações das aplicações.
 
