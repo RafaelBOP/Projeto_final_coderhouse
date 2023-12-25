@@ -48,7 +48,7 @@ pip install -r requirements.txt
     Pacotes Python necessários (listados no arquivo requirements.txt)
 
 ## Trechos de código
-| Alerta sobre a requisição do API |
+| Alerta Sobre a Requisição do API |
 |:---------------------:|
 | ![Alerta sobre a requisição do API](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/8bdd6b0e-0505-4e6e-a2a4-f981a0d00d97)|
 
