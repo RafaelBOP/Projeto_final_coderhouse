@@ -1,4 +1,4 @@
-# Pipeline de Dados Sobre SARS-CoV-2 no Brasil
+# Pipeline de Dados Sobre Vacinaçaõ de SARS-CoV-2 no Brasil
 
 ## Projeto Final Python - Coderhouse
 
@@ -10,7 +10,7 @@ https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao
 
 ## Visão Geral
 
-Este projeto consiste em um pipeline de dados que coleta informações de uma API do OPENDATASUS. O objetivo é coletar, tratar e analisar os casos e de SARS-CoV-2 no Brasil, permitindo uma fácil integração e manutenção.
+Este projeto consiste em um pipeline de dados que coleta informações de uma API do OPENDATASUS. O objetivo é coletar, tratar e analisar a cobertura vacinal de de SARS-CoV-2 no Brasil, permitindo uma fácil integração e manutenção.
 
 
 ## Funcionalidades
