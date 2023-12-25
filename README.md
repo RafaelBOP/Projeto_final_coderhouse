@@ -48,14 +48,18 @@ pip install -r requirements.txt
     Pacotes Python necessários (listados no arquivo requirements.txt)
 
 ## Trechos de código
+| Alerta sobre a requisição do API |
+|:---------------------:|
+| ![Alerta sobre a requisição do API](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/8bdd6b0e-0505-4e6e-a2a4-f981a0d00d97)|
 
-![Alerta sobre a requisição do API](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/8bdd6b0e-0505-4e6e-a2a4-f981a0d00d97)
+| Requisição do API |
+|:---------------------:|
+|![Requisição do API](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/2974300d-57a1-476a-a175-0dc690b5adbb)|
 
+| DataFrame de Aplicação das Vacinas, tratados e com colunas renomeadas |
+|:---------------------:|
+|![DataFrame de Aplicação das Vacinas, tratados e com colunas renomeadas](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/24f9fba8-7668-4307-aa01-54dc950d3fe9)|
 
-![Requisição do API](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/2974300d-57a1-476a-a175-0dc690b5adbb)
-
-
-![DataFrame de Aplicação das Vacinas, tratados e com colunas renomeadas](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/24f9fba8-7668-4307-aa01-54dc950d3fe9)
-
-
-![Relação Entre os DataFrames de Pacientes e Aplicações](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/df2a75fd-ea9f-4cf8-8379-8dbf7f78e154)
+| Relação Entre os DataFrames de Pacientes e Aplicações |
+|:---------------------:|
+|![Relação Entre os DataFrames de Pacientes e Aplicações](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/df2a75fd-ea9f-4cf8-8379-8dbf7f78e154)|
