@@ -50,10 +50,20 @@ Instale as dependências do projeto:
 pip install -r requirements.txt
 
 ## Requisitos do Sistema
-    Python 3.x
-    Pacotes Python necessários (listados no arquivo requirements.txt)
+    Python 3.x.
+    Bibliotecas do Python necessárias (listados no arquivo requirements.txt).
 
 ## Informações sobre os DataFrames
+
+As informações foram divididas em três DataFrames. Um para as infomações dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre a aplicação da vacina.   
+
+DataFrame sobre os pacientes
+
+
+DataFrame sobre as vacinas
+
+
+DataFrame sobre as aplicações
 
 
 ## Exemplos do Código
