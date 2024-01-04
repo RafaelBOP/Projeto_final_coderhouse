@@ -5,6 +5,12 @@
 
 Índice
 - [Visão Geral](#visao-geral)
+- [Funcionalidades](#funcionalidades)
+- [Intruções](#intrucoes)
+- [Requisitos do Sistema](#requisitos_do_sistema)
+- [Exemplos do Código](#exemplos_do_codigo)
+- [Autores](#autores)
+- [Referências](#referecias)
 
 
 ## Visão Geral
@@ -46,7 +52,7 @@ pip install -r requirements.txt
     Python 3.x
     Pacotes Python necessários (listados no arquivo requirements.txt)
 
-## Trechos de código
+## Exemplos do Código:
 | Alerta Sobre a Requisição do API |
 |:---------------------:|
 | ![Alerta sobre a requisição do API](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/8bdd6b0e-0505-4e6e-a2a4-f981a0d00d97)|
@@ -66,5 +72,5 @@ pip install -r requirements.txt
 ## Autores:
 Rafael Marques e Rafael Pinheiro
 
-## API utilizado:
-https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao
+## Referências:
+[API utilizado](https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao)
