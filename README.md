@@ -8,6 +8,7 @@
 - [Funcionalidades](#funcionalidades)
 - [Intruções](#intrucoes)
 - [Requisitos do Sistema](#requisitos_do_sistema)
+- [Informações sobre os DataFrames](#informacoes_sobre_os_dataframes)
 - [Exemplos do Código](#exemplos_do_codigo)
 - [Autores](#autores)
 - [Referências](#referecias)
@@ -52,7 +53,10 @@ pip install -r requirements.txt
     Python 3.x
     Pacotes Python necessários (listados no arquivo requirements.txt)
 
-## Exemplos do Código:
+## Informações sobre os DataFrames
+
+
+## Exemplos do Código
 | Alerta Sobre a Requisição do API |
 |:---------------------:|
 | ![Alerta sobre a requisição do API](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/8bdd6b0e-0505-4e6e-a2a4-f981a0d00d97)|
@@ -69,8 +73,8 @@ pip install -r requirements.txt
 |:---------------------:|
 |![Relação Entre os DataFrames de Pacientes e Aplicações](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/df2a75fd-ea9f-4cf8-8379-8dbf7f78e154)|
 
-## Autores:
+## Autores
 Rafael Marques e Rafael Pinheiro
 
-## Referências:
+## Referências
 [API utilizado](https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao)
