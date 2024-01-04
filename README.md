@@ -3,7 +3,7 @@
 ## Projeto Final Python - Coderhouse
 
 
-Índice
+## Índice
 - [Visão Geral](#visao-geral)
 - [Funcionalidades](#funcionalidades)
 - [Intruções](#intrucoes)
