@@ -2,11 +2,10 @@
 
 ## Projeto Final Python - Coderhouse
 
-Integrantes:
-Rafael Marques e Rafael Pinheiro
 
-API utilizado:
-https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao
+Índice
+- [Visão Geral](#Visão Geral)
+
 
 ## Visão Geral
 
@@ -63,3 +62,9 @@ pip install -r requirements.txt
 | Relação Entre os DataFrames de Pacientes e Aplicações |
 |:---------------------:|
 |![Relação Entre os DataFrames de Pacientes e Aplicações](https://github.com/RafaelBOP/Projeto_final_coderhouse/assets/98050820/df2a75fd-ea9f-4cf8-8379-8dbf7f78e154)|
+
+## Autores:
+Rafael Marques e Rafael Pinheiro
+
+## API utilizado:
+https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao
