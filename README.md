@@ -4,14 +4,14 @@
 
 
 ## Índice
-- [Visão Geral](#visao-geral)
+- [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
-- [Intruções](#intrucoes)
+- [Intruções](#intruções)
 - [Requisitos do Sistema](#requisitos_do_sistema)
-- [Informações sobre os DataFrames](#informacoes_sobre_os_dataframes)
-- [Exemplos do Código](#exemplos_do_codigo)
+- [Informações sobre os DataFrames](#informações_sobre_os_dataframes)
+- [Exemplos do Código](#exemplos_do_código)
 - [Autores](#autores)
-- [Referências](#referecias)
+- [Referências](#referêcias)
 
 
 ## Visão Geral
