@@ -8,7 +8,7 @@
 - [Funcionalidades](#funcionalidades)
 - [Intruções](#intruções)
 - [Requisitos do Sistema](#requisitos_do_sistema)
-- [Informações sobre os DataFrames](#informações_sobre_os_dataframes)
+- [Informações sobre o Pipeline](#informações_sobre_o_pipeline)
 - [Exemplos do Código](#exemplos_do_código)
 - [Autores](#autores)
 - [Referências](#referêcias)
@@ -98,6 +98,13 @@ Por fim, foi verificada a existência de dados nulos. As linhas nulos foram excl
 
 Os três DataFrames possuem um relacionamente através da coluna id_paciente. 
 Um left join foi realizado sempre priorizando as informações desejadas no DataFrame esquerdo.
+
+|Resultado|
+
+Ao final, foram gerados três novos DataFrames:
+- Informações da aplicação por paciente
+- Informações da vacina por paciente.
+- Informações da vacina por aplicação.
 
 ## Exemplos do Código
 | Alerta Sobre a Requisição do API |
