@@ -16,7 +16,7 @@
 
 ## Visão Geral
 
-Este projeto consiste em um pipeline de dados que coleta informações de uma API do OPENDATASUS. O objetivo é coletar, tratar e analisar a cobertura vacinal de de SARS-CoV-2 no Brasil, permitindo uma fácil integração e manutenção.
+Este projeto consiste em um pipeline de dados que coleta informações de uma API do OPENDATASUS. O objetivo é coletar, tratar e analisar  dados sobre a cobertura vacinal de de SARS-CoV-2 no Brasil, permitindo uma fácil integração e manutenção.
 
 
 ## Funcionalidades
@@ -41,11 +41,14 @@ Caso opte, é possível utilizar o requirements.txt para o uso das versões corr
 
 ## Requisitos do Sistema
     Python 3.x.
-    Bibliotecas do Python necessárias (listados no arquivo requirements.txt).
+    Bibliotecas do Python necessárias e com o versionamento listados em requirements.txt.
 
 ## Informações sobre o Pipeline
 
+|Requisição do API|
 A API será requisitada e será retornado um aviso através da função alerta_API sobre o status da requisição.
+
+|Manipulação inicial|
 Os dados JSON obtidos pela API devem ser normalizados para a criação dos DataFrames.
 Foram criados três DataFrames cuja coluna de relaciomente escolhida entre os três é a _id (no projeto com o alias de id_paciente)
 As informações originais foram divididas em DataFrames dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre as aplicações das vacinas.   
@@ -64,12 +67,37 @@ As colunas utilizadas são:
 | DataFrame sobre as vacinas |
 |:---------------------:|
 As colunas utilizadas são: 
-id_paciente	nome_vacina	fabricante	lote	lote_vacina	codigo_categoria	grupo_atendimento	status
+- id_paciente
+- nome_vacina
+- fabricante
+- lote
+- lote_vacina
+- codigo_categoria
+- grupo_atendimento
+- status
 
 | DataFrame sobre as aplicações |
 |:---------------------:|
-As colunas utilizadas são: id_paciente	nome_vacina	categoria_aplicacao	UF_estabelecimento	nome_municipio	razao_social	data_aplicacao	descricao_dose	numero_dose
+As colunas utilizadas são:
+- id_paciente
+- nome_vacina
+- categoria_aplicacao
+- UF_estabelecimento
+- nome_municipio
+- razao_social
+- data_aplicacao
+- descricao_dose
+- numero_dose
 
+|Tratamento dos DataFrames|
+Os DataFrames tiveram suas colunas renomeadas para sua melhor compreensão.
+As colunas que estavam com seu tipo errado também foram ajustados para o correto.
+Por fim, foi verificada a existência de dados nulos. As linhas nulos foram excluídas.
+
+|Relacionamento|
+
+Os três DataFrames possuem um relacionamente através da coluna id_paciente. 
+Um left join foi realizado sempre priorizando as informações desejadas no DataFrame esquerdo.
 
 ## Exemplos do Código
 | Alerta Sobre a Requisição do API |
