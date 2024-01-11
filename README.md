@@ -46,16 +46,16 @@ Caso opte, é possível utilizar o requirements.txt para o uso das versões corr
 ## Informações sobre o Pipeline
 
 - Requisição do API
-
+|:---------------------:|
 A API será requisitada e será retornado um aviso através da função alerta_API sobre o status da requisição.
 
 - Manipulação inicial
-
+|:---------------------:|
 Os dados JSON obtidos pela API devem ser normalizados para a criação dos DataFrames.
 Foram criados três DataFrames cuja coluna de relaciomente escolhida entre os três é a _id (no projeto com o alias de id_paciente)
 As informações originais foram divididas em DataFrames dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre as aplicações das vacinas.   
 
-- DataFrame sobre os pacientes
+|DataFrame sobre os pacientes|
 |:---------------------:|
 As colunas utilizadas são: 
 - id_paciente
@@ -66,7 +66,7 @@ As colunas utilizadas são:
 - UF
 - codigo_municipio
   
-- DataFrame sobre as vacinas
+|DataFrame sobre as vacinas|
 |:---------------------:|
 As colunas utilizadas são: 
 - id_paciente
@@ -78,7 +78,7 @@ As colunas utilizadas são:
 - grupo_atendimento
 - status
 
-- DataFrame sobre as aplicações
+|DataFrame sobre as aplicações|
 |:---------------------:|
 As colunas utilizadas são:
 - id_paciente
