@@ -45,17 +45,17 @@ Caso opte, é possível utilizar o requirements.txt para o uso das versões corr
 
 ## Informações sobre o Pipeline
 
-|Requisição do API|
-|:---------------------:|
+- Requisição do API
+
 A API será requisitada e será retornado um aviso através da função alerta_API sobre o status da requisição.
 
-|Manipulação inicial|
-|:---------------------:|
+- Manipulação inicial
+
 Os dados JSON obtidos pela API devem ser normalizados para a criação dos DataFrames.
 Foram criados três DataFrames cuja coluna de relaciomente escolhida entre os três é a _id (no projeto com o alias de id_paciente)
 As informações originais foram divididas em DataFrames dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre as aplicações das vacinas.   
 
-| DataFrame sobre os pacientes |
+- DataFrame sobre os pacientes
 |:---------------------:|
 As colunas utilizadas são: 
 - id_paciente
@@ -66,7 +66,7 @@ As colunas utilizadas são:
 - UF
 - codigo_municipio
   
-| DataFrame sobre as vacinas |
+- DataFrame sobre as vacinas
 |:---------------------:|
 As colunas utilizadas são: 
 - id_paciente
@@ -78,9 +78,9 @@ As colunas utilizadas são:
 - grupo_atendimento
 - status
 
-|<h1>DataFrame sobre as aplicações</h1> |
+- DataFrame sobre as aplicações
 |:---------------------:|
-|As colunas utilizadas são:
+As colunas utilizadas são:
 - id_paciente
 - nome_vacina
 - categoria_aplicacao
@@ -89,20 +89,20 @@ As colunas utilizadas são:
 - razao_social
 - data_aplicacao
 - descricao_dose
-- numero_dose|
+- numero_dose
 
-|Tratamento dos DataFrames|
+- Tratamento dos DataFrames
 |:---------------------:|
 Os DataFrames tiveram suas colunas renomeadas para sua melhor compreensão.
 As colunas que estavam com seu tipo errado também foram ajustados para o correto.
 Por fim, foi verificada a existência de dados nulos. As linhas nulos foram excluídas.
 
-|Relacionamento|
+- Relacionamento
 |:---------------------:|
 Os três DataFrames possuem um relacionamente através da coluna id_paciente. 
 Um left join foi realizado sempre priorizando as informações desejadas no DataFrame esquerdo.
 
-|Resultado|
+- Resultado
 |:---------------------:|
 Ao final, foram gerados três novos DataFrames:
 - Informações da aplicação por paciente
