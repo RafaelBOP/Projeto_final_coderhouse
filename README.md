@@ -78,9 +78,9 @@ As colunas utilizadas são:
 - grupo_atendimento
 - status
 
-| DataFrame sobre as aplicações |
+|<h1>DataFrame sobre as aplicações</h1> |
 |:---------------------:|
-As colunas utilizadas são:
+|As colunas utilizadas são:
 - id_paciente
 - nome_vacina
 - categoria_aplicacao
@@ -89,7 +89,7 @@ As colunas utilizadas são:
 - razao_social
 - data_aplicacao
 - descricao_dose
-- numero_dose
+- numero_dose|
 
 |Tratamento dos DataFrames|
 |:---------------------:|
