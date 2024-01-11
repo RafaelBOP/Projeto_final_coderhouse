@@ -1,4 +1,4 @@
-# Pipeline de Dados Sobre Vacinaçaõ de SARS-CoV-2 no Brasil
+# Pipeline de Dados Sobre Vacinação de SARS-CoV-2 no Brasil
 
 ## Projeto Final - Coderhouse
 
