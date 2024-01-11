@@ -51,8 +51,8 @@ Foram criados três DataFrames cuja coluna de relaciomente escolhida entre os tr
 As informações originais foram divididas em DataFrames dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre as aplicações das vacinas.   
 
 DataFrame sobre os pacientes
-|:---------------------:|
-As colunas utilizadas são: id_paciente	data_nascimento	idade	codigo_raca	sexo	UF	codigo_municipio
+|:---------------------:|As colunas utilizadas são: 
+id_paciente	data_nascimento	idade	codigo_raca	sexo	UF	codigo_municipio
 
 DataFrame sobre as vacinas
 |:---------------------:|
