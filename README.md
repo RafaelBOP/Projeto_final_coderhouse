@@ -36,34 +36,31 @@ Este projeto consiste em um pipeline de dados que coleta informações de uma AP
 ## Instruções
 
 Neste repositório há um ambiente virtual criado contendo as versões de bibliotecas utilizadas durante este projeto.
-Caso opte, é possível rodar apenas o requirements.txt para o uso da correta versão.
+Caso opte, é possível utilizar o requirements.txt para o uso das versões corretas.
 
-Clone este repositório para o seu ambiente local:
-git clone https://github.com/RafaelBOP/Projeto_final_coderhouse.git
-
-Crie e ative um ambiente virtual:
-cd pipeline_API_SUS
-python -m pyvenv
-source venv/bin/activate
-
-Instale as dependências do projeto:
-pip install -r requirements.txt
 
 ## Requisitos do Sistema
     Python 3.x.
     Bibliotecas do Python necessárias (listados no arquivo requirements.txt).
 
-## Informações sobre os DataFrames
+## Informações sobre o Pipeline
 
-As informações foram divididas em três DataFrames. Um para as infomações dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre a aplicação da vacina.   
+A API será requisitada e será retornado um aviso através da função alerta_API sobre o status da requisição.
+Os dados JSON obtidos pela API devem ser normalizados para a criação dos DataFrames.
+Foram criados três DataFrames cuja coluna de relaciomente escolhida entre os três é a _id (no projeto com o alias de id_paciente)
+As informações originais foram divididas em DataFrames dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre as aplicações das vacinas.   
 
 DataFrame sobre os pacientes
-
+|:---------------------:|
+As colunas utilizadas são: id_paciente	data_nascimento	idade	codigo_raca	sexo	UF	codigo_municipio
 
 DataFrame sobre as vacinas
-
+|:---------------------:|
+As colunas utilizadas são: id_paciente	nome_vacina	fabricante	lote	lote_vacina	codigo_categoria	grupo_atendimento	status
 
 DataFrame sobre as aplicações
+|:---------------------:|
+As colunas utilizadas são: id_paciente	nome_vacina	categoria_aplicacao	UF_estabelecimento	nome_municipio	razao_social	data_aplicacao	descricao_dose	numero_dose
 
 
 ## Exemplos do Código
