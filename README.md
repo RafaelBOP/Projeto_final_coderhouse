@@ -50,15 +50,17 @@ Os dados JSON obtidos pela API devem ser normalizados para a criação dos DataF
 Foram criados três DataFrames cuja coluna de relaciomente escolhida entre os três é a _id (no projeto com o alias de id_paciente)
 As informações originais foram divididas em DataFrames dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre as aplicações das vacinas.   
 
-DataFrame sobre os pacientes
-|:---------------------:|As colunas utilizadas são: 
+| DataFrame sobre os pacientes |
+|:---------------------:|
+As colunas utilizadas são: 
 id_paciente	data_nascimento	idade	codigo_raca	sexo	UF	codigo_municipio
 
-DataFrame sobre as vacinas
+| DataFrame sobre as vacinas |
 |:---------------------:|
-As colunas utilizadas são: id_paciente	nome_vacina	fabricante	lote	lote_vacina	codigo_categoria	grupo_atendimento	status
+As colunas utilizadas são: 
+id_paciente	nome_vacina	fabricante	lote	lote_vacina	codigo_categoria	grupo_atendimento	status
 
-DataFrame sobre as aplicações
+| DataFrame sobre as aplicações |
 |:---------------------:|
 As colunas utilizadas são: id_paciente	nome_vacina	categoria_aplicacao	UF_estabelecimento	nome_municipio	razao_social	data_aplicacao	descricao_dose	numero_dose
 
