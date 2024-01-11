@@ -53,8 +53,14 @@ As informações originais foram divididas em DataFrames dos pacientes, outro pa
 | DataFrame sobre os pacientes |
 |:---------------------:|
 As colunas utilizadas são: 
-id_paciente	data_nascimento	idade	codigo_raca	sexo	UF	codigo_municipio
-
+- id_paciente
+- data_nascimento
+- idade	
+- codigo_raca
+- sexo
+- UF
+- codigo_municipio
+  
 | DataFrame sobre as vacinas |
 |:---------------------:|
 As colunas utilizadas são: 
