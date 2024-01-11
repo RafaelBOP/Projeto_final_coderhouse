@@ -1,8 +1,5 @@
 # Pipeline de Dados Sobre Vacinação de SARS-CoV-2 no Brasil
 
-## Projeto Final - Coderhouse
-
-
 ## Índice
 - [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
