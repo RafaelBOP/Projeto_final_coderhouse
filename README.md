@@ -98,7 +98,7 @@ Os DataFrames tiveram suas colunas renomeadas para sua melhor compreensão.
 As colunas que estavam com seu tipo errado também foram ajustados para o correto.
 Por fim, foi verificada a existência de dados nulos. As linhas nulos foram excluídas.
 
-4. Relacionamento
+4. Relacionamento dos DataFrames
 
 Os três DataFrames possuem um relacionamente através da coluna id_paciente. 
 Um left join foi realizado sempre priorizando as informações desejadas no DataFrame esquerdo.
