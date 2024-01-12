@@ -29,6 +29,8 @@ Este projeto consiste em um pipeline de dados que coleta informações de uma AP
 
     DataFrames Relacionais: Os três DataFrames são relacionais à partir da coluna id_paciente.
 
+    Banco de Dados: Os DataFrames gerados neste projeto foram adicionados ao banco de dados.
+
 
 ## Instruções
 
@@ -106,6 +108,9 @@ Ao final, foram gerados três novos DataFrames:
 - Informações da aplicação por paciente
 - Informações da vacina por paciente.
 - Informações da vacina por aplicação.
+
+6. Banco de dados
+Todos os DataFrames gerados foram adicionados a um banco de dados vacinas_covid_brasil_tratadas.
 
 ## Exemplos do Código
 | Alerta Sobre a Requisição do API |
