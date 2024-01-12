@@ -1,14 +1,11 @@
-# Pipeline de Dados Sobre Vacinaçaõ de SARS-CoV-2 no Brasil
-
-## Projeto Final - Coderhouse
-
+# Pipeline de Dados Sobre Vacinação de SARS-CoV-2 no Brasil
 
 ## Índice
 - [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
-- [Intruções](#intruções)
+- [Instruções](#instruções)
 - [Requisitos do Sistema](#requisitos_do_sistema)
-- [Informações sobre os DataFrames](#informações_sobre_os_dataframes)
+- [Informações sobre o Pipeline](#informações_sobre_o_pipeline)
 - [Exemplos do Código](#exemplos_do_código)
 - [Autores](#autores)
 - [Referências](#referêcias)
@@ -16,7 +13,7 @@
 
 ## Visão Geral
 
-Este projeto consiste em um pipeline de dados que coleta informações de uma API do OPENDATASUS. O objetivo é coletar, tratar e analisar a cobertura vacinal de de SARS-CoV-2 no Brasil, permitindo uma fácil integração e manutenção.
+Este projeto consiste em um pipeline de dados que coleta informações de uma API do OPENDATASUS. O objetivo é coletar, tratar e analisar  dados sobre a cobertura vacinal de de SARS-CoV-2 no Brasil, permitindo uma fácil integração e manutenção.
 
 
 ## Funcionalidades
@@ -36,35 +33,79 @@ Este projeto consiste em um pipeline de dados que coleta informações de uma AP
 ## Instruções
 
 Neste repositório há um ambiente virtual criado contendo as versões de bibliotecas utilizadas durante este projeto.
-Caso opte, é possível rodar apenas o requirements.txt para o uso da correta versão.
+Caso opte, é possível utilizar o requirements.txt para o uso das versões corretas.
 
-Clone este repositório para o seu ambiente local:
-git clone https://github.com/RafaelBOP/Projeto_final_coderhouse.git
-
-Crie e ative um ambiente virtual:
-cd pipeline_API_SUS
-python -m pyvenv
-source venv/bin/activate
-
-Instale as dependências do projeto:
-pip install -r requirements.txt
 
 ## Requisitos do Sistema
     Python 3.x.
-    Bibliotecas do Python necessárias (listados no arquivo requirements.txt).
+    Bibliotecas do Python necessárias e com o versionamento listados em requirements.txt.
 
-## Informações sobre os DataFrames
+## Informações sobre o Pipeline
 
-As informações foram divididas em três DataFrames. Um para as infomações dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre a aplicação da vacina.   
+1. Requisição do API
 
-DataFrame sobre os pacientes
+A API será requisitada e será retornado um aviso através da função alerta_API sobre o status da requisição.
+
+2. Manipulação inicial
+
+Os dados JSON obtidos pela API devem ser normalizados para a criação dos DataFrames.
+Foram criados três DataFrames cuja coluna de relaciomente escolhida entre os três é a _id (no projeto com o alias de id_paciente)
+As informações originais foram divididas em DataFrames dos pacientes, outro para as informações das vacinas e por fim um DataFrame contendo as informações sobre as aplicações das vacinas.   
+
+|DataFrame sobre os pacientes|
+|:---------------------:|
+As colunas utilizadas são: 
+- id_paciente
+- data_nascimento
+- idade	
+- codigo_raca
+- sexo
+- UF
+- codigo_municipio
+  
+|DataFrame sobre as vacinas|
+|:---------------------:|
+As colunas utilizadas são: 
+- id_paciente
+- nome_vacina
+- fabricante
+- lote
+- lote_vacina
+- codigo_categoria
+- grupo_atendimento
+- status
+
+|DataFrame sobre as aplicações|
+|:---------------------:|
+As colunas utilizadas são:
+- id_paciente
+- nome_vacina
+- categoria_aplicacao
+- UF_estabelecimento
+- nome_municipio
+- razao_social
+- data_aplicacao
+- descricao_dose
+- numero_dose
 
 
-DataFrame sobre as vacinas
+3. Tratamento dos DataFrames
 
+Os DataFrames tiveram suas colunas renomeadas para sua melhor compreensão.
+As colunas que estavam com seu tipo errado também foram ajustados para o correto.
+Por fim, foi verificada a existência de dados nulos. As linhas nulos foram excluídas.
 
-DataFrame sobre as aplicações
+4. Relacionamento dos DataFrames
 
+Os três DataFrames possuem um relacionamente através da coluna id_paciente. 
+Um left join foi realizado sempre priorizando as informações desejadas no DataFrame esquerdo.
+
+5. Resultado
+
+Ao final, foram gerados três novos DataFrames:
+- Informações da aplicação por paciente
+- Informações da vacina por paciente.
+- Informações da vacina por aplicação.
 
 ## Exemplos do Código
 | Alerta Sobre a Requisição do API |
