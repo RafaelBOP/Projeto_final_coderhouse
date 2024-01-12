@@ -3,7 +3,7 @@
 ## Índice
 - [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
-- [Intruções](#intruções)
+- [Instruções](#instruções)
 - [Requisitos do Sistema](#requisitos_do_sistema)
 - [Informações sobre o Pipeline](#informações_sobre_o_pipeline)
 - [Exemplos do Código](#exemplos_do_código)
