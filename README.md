@@ -110,7 +110,9 @@ Ao final, foram gerados três novos DataFrames:
 - Informações da vacina por aplicação.
 
 6. Banco de dados
+   
 Todos os DataFrames gerados foram adicionados a um banco de dados vacinas_covid_brasil_tratadas.
+
 
 ## Exemplos do Código
 | Alerta Sobre a Requisição do API |
